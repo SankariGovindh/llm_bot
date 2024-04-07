@@ -5,5 +5,6 @@ The bot is available to test on https://huggingface.co/spaces/sgovindarajan/llm_
 
 The bot workflow for processing queries on a large scale to maximize QPS 
 
-<img width="1063" alt="Screenshot 2024-04-06 at 9 12 53 PM" src="https://github.com/SankariGovindh/llm_bot/assets/9916054/7057963c-a734-4a21-98ea-3f15615a679c">
+
+<img width="1052" alt="Screenshot 2024-04-06 at 9 20 32 PM" src="https://github.com/SankariGovindh/llm_bot/assets/9916054/894a6bfa-708f-4f41-a4cd-51559b3dc900">
 
