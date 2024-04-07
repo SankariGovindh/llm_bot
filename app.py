@@ -20,7 +20,7 @@ def init_messages() -> None:
     
 # chat application with history 
 def format_chat_prompt(message, history, max_tokens):
-    tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-large")
+    tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
     chat = []
     # Convert all messages in history to chat interactions
     for interaction in history:
@@ -41,8 +41,8 @@ def format_chat_prompt(message, history, max_tokens):
     raise SystemError
 
 def chat(message, history, max_tokens):
-    tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-large")
-    model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-large")
+    tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
+    model = AutoModelForCausalLM.from_pretrained("distilbert-base-uncased")
     prompt = format_chat_prompt(message, history, max_tokens)
     inputs = tokenizer(prompt, return_tensors="pt")
     outputs = model.generate(**inputs,
